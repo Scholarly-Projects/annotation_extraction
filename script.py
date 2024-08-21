@@ -50,8 +50,10 @@ def classify_color(color):
             return color_name
     return None
 
-def export_to_markdown(highlights, text_annotations, output_path):
-    md_content = "# Highlighted Text and Annotations\n"
+def export_to_markdown(highlights, text_annotations, output_path, original_filename):
+    # Generate header for Git site compatibility
+    md_content = f"# Highlights and Annotations from {original_filename}\n"
+    md_content += "\nThis document contains the extracted highlights and annotations.\n"
     
     # Highlights section
     for color, entries in highlights.items():
@@ -76,10 +78,16 @@ if __name__ == "__main__":
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    pdf_file = "input.pdf"  # Replace with the actual file name
-    pdf_path = os.path.join(input_folder, pdf_file)
-    output_path = os.path.join(output_folder, "highlights_and_annotations.md")
+    # Find the PDF file in the A folder
+    pdf_files = [f for f in os.listdir(input_folder) if f.endswith(".pdf")]
+    if len(pdf_files) != 1:
+        raise ValueError("There should be exactly one PDF file in the 'A' folder.")
+    
+    original_filename = pdf_files[0].replace(".pdf", "")
+    pdf_path = os.path.join(input_folder, pdf_files[0])
+    output_filename = f"{original_filename}_highlights_and_annotations.md"
+    output_path = os.path.join(output_folder, output_filename)
     
     highlights, text_annotations = extract_highlighted_text_and_annotations(pdf_path)
-    export_to_markdown(highlights, text_annotations, output_path)
+    export_to_markdown(highlights, text_annotations, output_path, original_filename)
     print(f"Exported highlighted text and annotations to {output_path}")
