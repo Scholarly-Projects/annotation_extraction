@@ -1,22 +1,19 @@
 import fitz  # PyMuPDF
-import re
-from markdown import markdown
 import os
 
 def extract_highlighted_text_and_annotations(pdf_path):
     doc = fitz.open(pdf_path)
     highlights = {"blue": [], "yellow": [], "orange": []}
     text_annotations = []
-    
+
     for page_num in range(len(doc)):
-        page = doc[page_num]
-        for annot in page.annots():
+        page = doc.load_page(page_num)
+        for annot in page.annots() or []:
             if annot.type[0] == 8:  # Highlight annotation type
-                color = annot.colors['stroke']  # Get the color of the highlight
+                color = annot.colors.get('stroke', (0, 0, 0))  # Get the color of the highlight
                 quad_points = annot.vertices
                 text = ""
                 for i in range(0, len(quad_points), 4):
-                    # Extract text from the quad points (highlighted areas)
                     rect = fitz.Quad(quad_points[i:i+4]).rect
                     text += page.get_text("text", clip=rect)
 
@@ -33,10 +30,10 @@ def extract_highlighted_text_and_annotations(pdf_path):
     return highlights, text_annotations
 
 def classify_color(color):
-    # Define color ranges
-    blue = (0, 0, 1)
-    yellow = (1, 1, 0)
-    orange = (1, 0.65, 0)
+    # Define color ranges with updated values
+    blue = (0.659, 0.929, 1.000)  # RGB for #A8EDFF
+    yellow = (1.0, 1.0, 0.0)      # RGB for #FFFF00 (close to yellow)
+    orange = (0.996, 0.800, 0.400) # RGB for #FECC66
 
     color_map = {
         "blue": blue,
@@ -68,7 +65,7 @@ def export_to_markdown(highlights, text_annotations, output_path, original_filen
             md_content += f"- **Page {page}**: {text}\n"
     
     with open(output_path, "w") as md_file:
-        md_file.write(markdown(md_content))
+        md_file.write(md_content)
 
 if __name__ == "__main__":
     # Set paths for input and output
