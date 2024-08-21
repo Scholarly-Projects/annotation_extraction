@@ -1,6 +1,8 @@
 # Highlights and Annotations from Johnson - 1999 - Soul by soul life inside the antebellum slave mar
 
-This document contains the extracted highlights and annotations in chronological order.
+Author Last Name, First Name. *Book Title*. Publisher, Year.
+
+This document contains the extracted highlights, annotations, and chapters arranged chronologically.
 
 ## General Notes
 - **Page 3**: Both of these markets were really clusters of competing arms each of which in turn maintained its own yard for keeping  pens in the parlance of the traded frontage for displaying them
@@ -11,10 +13,10 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 3**: the smells of city or a hundred people forced to live in a space the size of a home lot
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 3**: Not far from the levee was North america largest slave market
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 3**:  and maybe months that bounded the trading season
 
 ## General Notes
@@ -38,11 +40,11 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 5**: Closing the trade was favorable to both opponents of slavery and a portion of slaveholders mostly  who feared that the continue
 
+## Definitions, Locations, People
+- **Page 5**: Royal African Company and the Dutch West India Company
+
 ## Author Thesis and Methodology
 - **Page 5**: There was direct trade among the colonies and be tween the colonies and  but much of the aplanatic trade was triangular slaves from africa sugar from the West Indies and brazil money and manufactures from  People were traded along the bottom of the triangle prints would stick at the top
-
-## Definitions, Locations, People and Stats
-- **Page 5**: Royal African Company and the Dutch West India Company
 
 ## General Notes
 - **Page 6**: used importation of slaves would dilute the social power that their own slaves supported
@@ -53,17 +55,17 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 6**: ya the invention of the cotton gin in  the purchase of  in  and the subjugation of southern  realized along the T rail of T ears in  opened new regions of the South to cultivation and slavery
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 6**: In the seven decades between the Constitution and the Civil war
 
 ## General Notes
 - **Page 7**: Some of them were insured in transit some few others covered by life insurance Their sales had to be notarized and their sellers taxed Those hundreds of thousands of people were revenue to the cities and states where they were sold and prints in the pockets of landlords provisioners physicians and insurance agents long before they were sold
 
+## Definitions, Locations, People
+- **Page 7**: It has been estimated that in  regions of the antebellum South the proceeds from the sale of slaves was equivalent in value to often percent of the regions staple crop economy
+
 ## Author Thesis and Methodology
 - **Page 7**: indeed the price of slaves tracked the price of cotton to such a degree that it was a commonplace in the years after 1840 that the price of slaves could be determined by multiplying the price of cotton by ten thousand seven cents per pound for cotton yielding seven hundred dollars per slave
-
-## Definitions, Locations, People and Stats
-- **Page 7**: It has been estimated that in  regions of the antebellum South the proceeds from the sale of slaves was equivalent in value to often percent of the regions staple crop economy
 
 ## General Notes
 - **Page 8**: Contrary to the popular image most of these slaves were not sold quickly at large public auctions but in extended private bargains made in the slave pens maintained by slave dealers
@@ -71,10 +73,10 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 8**: Those whose  agricultural ventures proved successful made their way back to the pens this time looking for skilled artisans and domestic slaves who regret rented the high end of the slave market and could be found only in large urban centers like New organs
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 8**: Slaves were gathered in  wash intone    and sty Louis and sent south either overland in chains by sailing ships around the coast or by steamboats down the 
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 8**: These slaves were sold in the urban markets of  savannah mobile  and especially New clean
 
 ## General Notes
@@ -137,10 +139,13 @@ This document contains the extracted highlights and annotations in chronological
 ## Author Thesis and Methodology
 - **Page 19**: he
 
+## Chapter
+- **Page 20**: chapter one
+
 ## General Notes
 - **Page 21**: In practice by running away or otherwise resisting their sales forcing their owners to create public knowledge of the violent underpinnings of their power
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 21**: In these rituals of remembrance the disparate experiences of two million human travel dies were built into the ideology of the chattel principle
 
 ## General Notes
@@ -155,13 +160,13 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 23**: Under the chattel print cipher every advance into enslaved  reliance on another every child friend or lover every social  within it the threat of its own dissolution
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 23**: or by their peculiar combination in the nuzzling violence that characterized shareholding paternalism
 
 ## General Notes
 - **Page 24**: For slaves especially those in the exporting states of the upper south time and space were bent around the  threat of sale to a slave traders
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 24**: Among slaveholders this peculiar mixture of ostensible moderation and outright threat was called paternalism
 
 ## General Notes
@@ -248,7 +253,7 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 44**: Through singing these songs slaves translated the tragically isolating personal experience of the trade into a shared anti slavery ideology
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 44**: an imagined community of enslaved people built out of the visualization in song
 
 ## General Notes
@@ -257,7 +262,10 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 45**: in every bird a message
 
-## Definitions, Locations, People and Stats
+## Chapter
+- **Page 46**: chapter two
+
+## Definitions, Locations, People
 - **Page 46**: John White
 
 ## General Notes
@@ -281,13 +289,13 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 49**: Many of the smaller arms created a small town version of the interstate trade between urban centers
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 49**: Like samiel browning who followed the 184849 trading season from albata bluff port to   bend to   then Greenwood then yahoo city and back to 
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 50**: The seasonality of the slave trade was tied to the cycles of the larger agricultural economy In the upper south exportation had to wait until after harvest because hands were needed in the summer and fall to tend the crops in the lower south buying was delayed until after harvest because that was when buyers had money available to pay for slaves
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 51**: The inland journey could take as long as seven or eight weeks on foot with the slaves covering about twenty miles a day
 
 ## General Notes
@@ -296,7 +304,7 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 52**: none of these sales were recorded as if a slave trader was involved and thus they have been passed over by those who have tried to tabulate the traders share of the broader market in slaves by counting out the numbers of traders names on registered Acts of sales
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 52**: Large  local like sending or interstate like John pagan of South  slave yards in New  The City T treasurers Census of Merchants listed nineteen such yards in 1854.
 
 ## General Notes
@@ -317,7 +325,7 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 59**: By claiming to represent a totality of human attributes without referring directly to any of them the traders tables axed people in a system of comparison which was located solely in the slave market The traders used these makeup market categories to compare physically different people to one another
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 59**: T o limit the amount of information they had to send back and forth the traders packed people into price categories according to gender age p p p p g g g g height weight and skin  Presiding over these matrices of physic can comparison and price were the type of categories listed on a circular distributed by the  arm  and Hill in 1860 and preserved in the papers of slave trader willing  Extra men not 1 men Second Rate or Ordinary men Extra girls not 1 girls Second rate or Ordinary girls
 
 ## General Notes
@@ -329,7 +337,7 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 61**: The come Martin described was a series of identities arranged along the chain for easy supervision those who seemed resistant followed by those who did not those who had no attachments followed by those who were judged unlikely to leave family members or dependents behind to run away The comes were a reverse image of the commodity categories by which the traders selected their  on the very human attachments it was the traders business to destroy
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 61**: A long row of men chained  together called the coffee
 
 ## General Notes
@@ -374,10 +382,10 @@ This document contains the extracted highlights and annotations in chronological
 ## General Notes
 - **Page 76**: Apparent in the Creole rebellion are the  of the slave community in the  generally invisible processes by which a
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 76**: Beside southern roads near  in  on the National Road in  in rural  in  in virgin in  or aboard slave ships on a  catboat in 1826 or at sea on the decanter in the same years and aboard the layette in  slaves who had met one another in the trade collectively and violently revolted against the trader
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 76**: Creole in 1841.
 
 ## General Notes
@@ -385,3 +393,24 @@ This document contains the extracted highlights and annotations in chronological
 
 ## General Notes
 - **Page 77**: indeed the creation of a slave community in the slave trade was less a  project than an undesigned process by which a web of interconnection was spun out of a series of everyday interactions
+
+## Chapter
+- **Page 79**: chapter three
+
+## Definitions, Locations, People
+- **Page 79**: S hut in by herself on a dreary day in  maria billiard found h of d d i b t l hill d d d t b t herself daydreaming about slaves billiards daydream was not about real slaves
+
+## Important
+- **Page 79**: instead her daydream was about imaginary slaves It is raining so furiously this morning that even the belle of the balls wish oh that I had a million slaves or more T o catch the raindrops as they pour would be of no avail
+
+## Chapter
+- **Page 138**: chapter four
+
+## Chapter
+- **Page 156**: chapter five
+
+## Chapter
+- **Page 183**: chapter six
+
+## Chapter
+- **Page 210**: chapter seven

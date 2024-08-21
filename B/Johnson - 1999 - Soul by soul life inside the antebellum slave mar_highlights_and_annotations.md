@@ -1,6 +1,22 @@
 # Highlights and Annotations from Johnson - 1999 - Soul by soul life inside the antebellum slave mar
 
-This document contains the extracted highlights and annotations.
+Author Last Name, First Name. *Book Title*. Publisher, Year.
+
+This document contains the extracted highlights, annotations, and chapters.
+
+### chapter one (Page 20)
+
+### chapter two (Page 46)
+
+### chapter three (Page 79)
+
+### chapter four (Page 138)
+
+### chapter five (Page 156)
+
+### chapter six (Page 183)
+
+### chapter seven (Page 210)
 
 ## General Notes
 - **Page 3**: Both of these markets were really clusters of competing arms each of which in turn maintained its own yard for keeping  pens in the parlance of the traded frontage for displaying them
@@ -88,7 +104,7 @@ This document contains the extracted highlights and annotations.
 - **Page 77**: Though it is ultimately unclear whether the nineteen rebels had tried to keep their plans secret from the others tried unsuccessfully to convince them to join or even as the mate suspected been appointed by the others as chiefs it is clear that their eventual action emerged one way or another out of a negotiate ton with all of the slaves in the hold
 - **Page 77**: indeed the creation of a slave community in the slave trade was less a  project than an undesigned process by which a web of interconnection was spun out of a series of everyday interactions
 
-## Definitions, Locations, People and Stats
+## Definitions, Locations, People
 - **Page 3**: Not far from the levee was North america largest slave market
 - **Page 3**:  and maybe months that bounded the trading season
 - **Page 5**: Royal African Company and the Dutch West India Company
@@ -109,6 +125,7 @@ This document contains the extracted highlights and annotations.
 - **Page 61**: A long row of men chained  together called the coffee
 - **Page 76**: Beside southern roads near  in  on the National Road in  in rural  in  in virgin in  or aboard slave ships on a  catboat in 1826 or at sea on the decanter in the same years and aboard the layette in  slaves who had met one another in the trade collectively and violently revolted against the trader
 - **Page 76**: Creole in 1841.
+- **Page 79**: S hut in by herself on a dreary day in  maria billiard found h of d d i b t l hill d d d t b t herself daydreaming about slaves billiards daydream was not about real slaves
 
 ## Author Thesis and Methodology
 - **Page 4**: What follows is the story of these showrooms
@@ -135,3 +152,6 @@ This document contains the extracted highlights and annotations.
 - **Page 40**: Whether it was the scene itself or the influence that open ex pressing of loss and betrayal might have on other slaves their own family members or even themselves some slaveholders sidestepped the moment of truth with a lie By so doing they assured themselves
 - **Page 41**: a smooth transaction but conceded that their economy could be suss trained only at the cost of its pretense of humanity
 - **Page 75**: Balls memoir should not be mistaken for a literal rendering of what hap opened in the kitchen But the structure of the  initial connection based on conversation and then the  ex change of increasingly dangerous information's something that can be read from Balls subsequent account
+
+## Important
+- **Page 79**: instead her daydream was about imaginary slaves It is raining so furiously this morning that even the belle of the balls wish oh that I had a million slaves or more T o catch the raindrops as they pour would be of no avail
