@@ -114,7 +114,8 @@ def export_to_markdown(highlights, text_annotations, output_path, original_filen
     categorized_texts.sort(key=lambda x: x[1])
 
     for text, page, category in categorized_texts:
-        chronological_md_content += f"\n### {category}\n"
+        # Output the category as a tag
+        chronological_md_content += f"\n#{category}\n"
         chronological_md_content += f"- **Page {page}**: {text}\n"
     
     # Write to chronological markdown file
@@ -137,8 +138,8 @@ if __name__ == "__main__":
     original_filename = pdf_files[0].replace(".pdf", "")
     pdf_path = os.path.join(input_folder, pdf_files[0])
     
-    categorized_output_filename = f"{original_filename}_highlights_and_annotations.md"
-    chronological_output_filename = f"{original_filename}_chronological_highlights_and_annotations.md"
+    categorized_output_filename = f"category_{original_filename}_highlights_and_annotations.md"
+    chronological_output_filename = f"chronological_{original_filename}_highlights_and_annotations.md"
     
     categorized_output_path = os.path.join(output_folder, categorized_output_filename)
     chronological_output_path = os.path.join(output_folder, chronological_output_filename)
