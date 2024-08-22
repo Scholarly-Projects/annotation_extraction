@@ -1,22 +1,6 @@
 # Highlights and Annotations from Johnson - 1999 - Soul by soul life inside the antebellum slave mar
 
-Author Last Name, First Name. *Book Title*. Publisher, Year.
-
-This document contains the extracted highlights, annotations, and chapters.
-
-### chapter one (Page 20)
-
-### chapter two (Page 46)
-
-### chapter three (Page 79)
-
-### chapter four (Page 138)
-
-### chapter five (Page 156)
-
-### chapter six (Page 183)
-
-### chapter seven (Page 210)
+This document contains the extracted highlights and annotations.
 
 ## General Notes
 - **Page 3**: Both of these markets were really clusters of competing arms each of which in turn maintained its own yard for keeping  pens in the parlance of the traded frontage for displaying them
