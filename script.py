@@ -17,7 +17,14 @@ def spell_check_text(text):
 
 def extract_highlighted_text_and_annotations(pdf_path):
     doc = fitz.open(pdf_path)
-    highlights = {"General Notes": [], "Definitions, Locations, People": [], "Author Thesis and Methodology": [], "Important": [], "Stats": []}
+    highlights = {
+        "General Notes": [],
+        "Definitions, Locations, People, Organizations": [],
+        "Author Thesis and Methodology": [],
+        "Important": [],
+        "Stats": [],
+        "Quotes": []
+    }
     text_annotations = []
 
     for page_num in range(len(doc)):
@@ -58,18 +65,21 @@ def classify_color(color):
     if max(color) > 1:
         color = tuple(c / 255.0 for c in color)
     
-    blue = (0.659, 0.929, 1.000)   # RGB for #A8EDFF
-    yellow = (1.0, 1.0, 0.0)       # RGB for #FFFF00
-    orange = (0.996, 0.800, 0.400) # RGB for #FECC66
-    pink = (1.0, 0.369, 0.565)     # RGB for #FF5E90
-    purple = (0.925, 0.624, 0.996) # RGB for #EC9FFF
+    # Updated color mappings
+    light_blue = (0.659, 0.929, 1.000)    # RGB for #A8EDFF
+    yellow = (1.0, 1.0, 0.039)            # RGB for #FFFF0A
+    orange = (0.992, 0.502, 0.031)        # RGB for #FD8008
+    red = (1.0, 0.255, 0.494)             # RGB for #FF417E
+    purple = (0.902, 0.522, 1.0)          # RGB for #E685FF
+    gray = (0.902, 0.902, 0.902)          # RGB for #E6E6E6
 
     color_map = {
-        "General Notes": blue,
-        "Definitions, Locations, People": yellow,
+        "General Notes": light_blue,
+        "Definitions, Locations, People, Organizations": yellow,
         "Author Thesis and Methodology": orange,
-        "Important": pink,
-        "Stats": purple
+        "Important": red,
+        "Stats": purple,
+        "Quotes": gray
     }
 
     tolerance = 0.2  # Adjust this value if needed
@@ -86,7 +96,7 @@ def export_to_markdown(highlights, text_annotations, output_path, original_filen
     md_content += "\nThis document contains the extracted highlights and annotations.\n"
     
     # Output sections in the specified order (Categorized output)
-    for category in ["General Notes", "Definitions, Locations, People", "Author Thesis and Methodology", "Stats", "Important"]:
+    for category in ["General Notes", "Definitions, Locations, People, Organizations", "Author Thesis and Methodology", "Stats", "Important", "Quotes"]:
         if category in highlights and highlights[category]:
             md_content += f"\n## {category}\n"
             for text, page in highlights[category]:
@@ -107,7 +117,7 @@ def export_to_markdown(highlights, text_annotations, output_path, original_filen
     
     # Combine all texts by category and sort them by page
     categorized_texts = []
-    for category in ["General Notes", "Definitions, Locations, People", "Author Thesis and Methodology", "Stats", "Important"]:
+    for category in ["General Notes", "Definitions, Locations, People, Organizations", "Author Thesis and Methodology", "Stats", "Important", "Quotes"]:
         categorized_texts.extend((text, page, category) for text, page in highlights.get(category, []))
     categorized_texts.extend((text, page, "Text Annotations") for text, page in text_annotations)
     
