@@ -1,16 +1,19 @@
 import fitz  # PyMuPDF
 import os
-from textblob import TextBlob
+from spellchecker import SpellChecker
 
 def clean_text(text):
     """Remove unwanted characters and clean up the text."""
     return text.encode('ascii', 'ignore').decode('ascii')
 
 def spell_check_text(text):
-    """Correct spelling in the text using TextBlob."""
-    blob = TextBlob(text)
-    corrected_text = blob.correct()
-    return str(corrected_text)
+    """Correct spelling in the text."""
+    spell = SpellChecker()
+    words = text.split()
+    corrected_words = [spell.correction(word) if word not in spell else word for word in words]
+    # Filter out None values
+    corrected_words = [word if word is not None else '' for word in corrected_words]
+    return ' '.join(corrected_words)
 
 def extract_highlighted_text_and_annotations(pdf_path):
     doc = fitz.open(pdf_path)
