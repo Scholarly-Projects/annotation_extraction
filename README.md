@@ -1,1 +1,2 @@
-# annotation_extraction
+# Annotation Extraction Tool 
+Created by Andrew Weymouth to help code PDF files and extract the text of those annotations to export categorically and chronologically to markdown files so they can be visualized and make connections within Obsidian. Andrew Weymouth, *Fall 2024*.
