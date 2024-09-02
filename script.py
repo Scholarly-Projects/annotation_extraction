@@ -1,19 +1,18 @@
 import fitz  # PyMuPDF
 import os
-from spellchecker import SpellChecker
+import re
 
 def clean_text(text):
     """Remove unwanted characters and clean up the text."""
-    return text.encode('ascii', 'ignore').decode('ascii')
-
-def spell_check_text(text):
-    """Correct spelling in the text."""
-    spell = SpellChecker()
-    words = text.split()
-    corrected_words = [spell.correction(word) if word not in spell else word for word in words]
-    # Filter out None values
-    corrected_words = [word if word is not None else '' for word in corrected_words]
-    return ' '.join(corrected_words)
+    # First, handle hyphenated line breaks: remove the hyphen and line break
+    text = re.sub(r'-\n', '', text)
+    
+    # Replace remaining line breaks with a space
+    text = text.replace('\n', ' ')
+    
+    # Remove unwanted characters and extra spaces
+    text = text.encode('ascii', 'ignore').decode('ascii')
+    return ' '.join(text.split())   # Remove extra spaces
 
 def extract_highlighted_text_and_annotations(pdf_path):
     doc = fitz.open(pdf_path)
@@ -43,7 +42,6 @@ def extract_highlighted_text_and_annotations(pdf_path):
                         rect = fitz.Quad(quad_points[i:i+4]).rect
                         text += page.get_text("text", clip=rect)
                     text = clean_text(text.strip())
-                    text = spell_check_text(text)
                     if text:
                         color_name = classify_color(color)
                         if color_name:
@@ -54,7 +52,6 @@ def extract_highlighted_text_and_annotations(pdf_path):
                 if not annot_text:
                     annot_text = annot_info.get('title', '')
                 annot_text = clean_text(annot_text.strip())
-                annot_text = spell_check_text(annot_text)
                 if annot_text:
                     text_annotations.append((annot_text, page_num + 1))
 
