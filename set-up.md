@@ -1,6 +1,6 @@
 # Setup Instructions for Python Tool
 
-To successfully run the Python tool for extracting highlighted text and annotations from PDF files, please follow the instructions below to install the required software and dependencies.
+To successfully run the Python tool for extracting highlighted text from PDF files, please follow the instructions below to install the required software and dependencies.
 
 ## Step 1: Install Bash 
 
@@ -71,4 +71,4 @@ To successfully run the Python tool for extracting highlighted text and annotati
      ```
    - Or simply go to `script.py` and press the play button on the top right corner of the screen in Visual Studio Code.
 
-After following these steps, your Python tool should run successfully, and you will find the extracted highlights and annotations in the `annotation_extraction/B` folder.
+After following these steps, your Python tool should run successfully, and you will find the extracted highlights in the `annotation_extraction/B` folder in two separate markdown files organized categorically and chronologically.
