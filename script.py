@@ -109,8 +109,8 @@ def export_to_markdown(highlights, text_annotations, output_path, original_filen
         md_file.write(md_content)
     
     # Generate chronological markdown content
-    chronological_md_content = f"# Highlights and Annotations from {original_filename}\n"
-    chronological_md_content += "\nThis document contains the extracted highlights and annotations arranged chronologically.\n"
+    chronological_md_content = f"# Highlights from {original_filename}\n"
+    chronological_md_content += "\nThis document contains the extracted highlights arranged chronologically.\n"
     
     # Combine all texts by category and sort them by page
     categorized_texts = []
@@ -145,8 +145,8 @@ if __name__ == "__main__":
     original_filename = pdf_files[0].replace(".pdf", "")
     pdf_path = os.path.join(input_folder, pdf_files[0])
     
-    categorized_output_filename = f"category_{original_filename}_highlights_and_annotations.md"
-    chronological_output_filename = f"chronological_{original_filename}_highlights_and_annotations.md"
+    categorized_output_filename = f"category_{original_filename}.md"
+    chronological_output_filename = f"chronological_{original_filename}.md"
     
     categorized_output_path = os.path.join(output_folder, categorized_output_filename)
     chronological_output_path = os.path.join(output_folder, chronological_output_filename)
