@@ -34,30 +34,36 @@ To successfully run the Python tool for extracting highlighted text from PDF fil
      ```
    - This should display the installed version of Python.
 
-## Step 4: Install Required Python Packages
 
-4. **Install PyMuPDF:**
+## Step 4: Activate venv 
+```
+source .venv/bin/activate
+```
+
+## Step 5: Install Required Python Packages
+
+5. **Install PyMuPDF:**
    - In the command line, run the following command to install the `PyMuPDF` library:
      ```bash
      pip install PyMuPDF
      ```
 
-## Step 5: Clone the Repository
+## Step 6: Clone the Repository
 
-5. **Clone the Repository:**
+6. **Clone the Repository:**
    - Navigate to the directory where you want to save the project and run:
      ```bash
      git clone https://github.com/Scholarly-Projects/annotation_extraction.git
      ```
 
-## Step 6: Organize Your Folders
+## Step 7: Organize Your Folders
 
-6. **Place Your PDF File:**
+7. **Place Your PDF File:**
    - Place the PDF file from which you want to extract highlights and annotations into the `annotation_extraction/A` folder.
 
 ## Step 7: Run the Python Script
 
-7. **Run the Python Script:**
+8. **Run the Python Script:**
    - In the command line, navigate to the cloned repository directory and run:
      ```bash
      python script.py
