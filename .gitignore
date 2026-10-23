@@ -1,10 +1,21 @@
-# macOS specific
+# macOS
 .DS_Store
+._*
 
-# Python virtual environment
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments (yours is .venv, not venv)
+.venv/
 venv/
 
-# Folders
+# Editors
+.vscode/
+.idea/
 
-A/
-B/
+# Input PDFs and generated notes — keep the folders, ignore their contents
+A/*
+B/*
+!A/.gitkeep
+!B/.gitkeep
