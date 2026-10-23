@@ -351,27 +351,56 @@ def text_under_quads(words, quads):
     return join_lines(lines)
 
 
-def annot_text(doc, page, annot):
-    """Every place an annotation's text can hide, in order."""
+# Labels PDF apps write automatically (usually the name of the tool used).
+# On their own they carry no information, so they don't count as note text.
+PLACEHOLDER_LABELS = {
+    "highlight", "underline", "strikeout", "strike out", "strikethrough",
+    "squiggly", "note", "notes", "comment", "comments", "sticky note", "text",
+    "text box", "textbox", "free text", "freetext", "typewriter", "callout",
+    "ink", "pen", "pencil", "freehand", "drawing", "eraser", "square",
+    "rectangle", "circle", "oval", "line", "arrow", "polygon", "polyline",
+    "stamp", "caret", "annotation", "untitled",
+}
+
+
+def is_placeholder(text, annot=None):
+    t = text.strip().strip(".:").lower()
+    if not t or t in PLACEHOLDER_LABELS:
+        return True
+    return annot is not None and t == annot.type[1].lower()
+
+
+def is_highlighter_stroke(annot):
+    """Freehand highlighter strokes are stored as ink. Recognize them by their
+    label or by being see-through, so they aren't reported as handwriting."""
     info = annot.info or {}
-    text = clean_text(info.get("content", "") or "")
-    if text:
-        return text
-    try:  # rich text (/RC) — some apps leave /Contents empty
-        kind, val = doc.xref_get_key(annot.xref, "RC")
-        if kind == "string" and val:
-            text = strip_xml(val)
-            if text:
-                return text
+    label = f"{info.get('subject', '')} {info.get('title', '')}".lower()
+    if "highlight" in label:
+        return True
+    try:
+        return 0 <= annot.opacity < 0.9
     except Exception:
-        pass
-    try:  # text drawn in the annotation's appearance
-        text = clean_text(annot.get_text())
-        if text:
+        return False
+
+
+def annot_text(doc, page, annot):
+    """Every place an annotation's real text can hide, in order. Returns ""
+    when all that's there is an automatic label such as "Highlight"."""
+    info = annot.info or {}
+    candidates = [lambda: info.get("content", "")]
+    # rich text (/RC) — some apps leave /Contents empty
+    candidates.append(lambda: strip_xml(doc.xref_get_key(annot.xref, "RC")[1])
+                      if doc.xref_get_key(annot.xref, "RC")[0] == "string" else "")
+    # text drawn in the annotation's appearance
+    candidates.append(lambda: annot.get_text())
+    for get in candidates:
+        try:
+            text = clean_text(get() or "")
+        except Exception:
+            continue
+        if text and not is_placeholder(text, annot):
             return text
-    except Exception:
-        pass
-    return clean_text(info.get("subject", "") or "")
+    return ""
 
 
 def flattened_notes(page, spread, covered):
@@ -453,6 +482,8 @@ def extract(pdf_path, debug_lines=None):
                 category = classify_color(color) or UNCATEGORIZED
                 comment = (annot.info or {}).get("content", "") or ""
                 comment = clean_text(comment)
+                if is_placeholder(comment, annot):
+                    comment = ""
                 if not text and not comment:
                     continue
                 if not text:
@@ -473,7 +504,7 @@ def extract(pdf_path, debug_lines=None):
             col = (page.number, column_of(page, rect.x0, rect.x1, spread))
             if text:
                 it = new_item("margin", MARGIN_NOTE_CATEGORY, text, rect, col, color=color)
-            elif atype == INK:
+            elif atype == INK and not is_highlighter_stroke(annot):
                 it = new_item("ink", MARGIN_NOTE_CATEGORY,
                               "[handwritten mark or note — see PDF]", rect, col, color=color)
             else:
